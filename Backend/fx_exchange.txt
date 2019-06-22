@@ -1,0 +1,14 @@
+Country	Code	Rate
+United States Dollar	USD	0.00278
+Euro	EUR	0.00244
+British Pound	GBP	0.00218
+Japanese Yen	JPY	0.2981
+Australian Dollar	AUD	0.00401
+Canadian Dollar	CAD	0.00368
+Swiss Franc	CHF	0.00271
+Chinese Yuan	CNY	0.01908
+Hong Kong Dollar	HKD	0.02171
+Russian Rouble	RUB	0.17508
+Singapore Dollar	SGD	0.00376
+Indian Rupee	INR	0.19328
+Mexican Peso	MXN	0.05312

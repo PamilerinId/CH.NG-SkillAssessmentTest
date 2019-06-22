@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+        <title>Company Performance & Revenue - Visuals</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" href="styles.scss">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous"> -->
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron" style="text-align: center">
+                <h1 class="display-4">Perfomance & Revenue</h1>
+                <p class="lead">A random selection of ten(10) Nigerian Brand Company highlighting their LTM revenue and performance </p>
+                <p> *Data presented here are fictitious</p>
+            </div>
+
+            <div id="tableContainer" class="container">
+                <table class="table table-hover">
+                    <caption style="text-align: center">Company Revenue Table</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Logo</th>
+                            <th rowspan="2">Brand</th>
+                            <th colspan="12" 
+                                style="text-align: center">Monthly Revenue(Billion ₦)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Jan</th>
+                            <th scope="col">Feb</th>
+                            <th scope="col">Mar</th>
+                            <th scope="col">Apr</th>
+                            <th scope="col">May</th>
+                            <th scope="col">Jun</th>
+                            <th scope="col">Jul</th>
+                            <th scope="col">Aug</th>
+                            <th scope="col">Sep</th>
+                            <th scope="col">Oct</th>
+                            <th scope="col">Nov</th>
+                            <th scope="col">Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <th><img class="logo" src="assets/dangote.png"></th>
+                            <td>Dangote Cement</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <th><img class="logo" src="assets/nestle.png"></th>
+                            <td>Nestle Nigeria Plc.</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr class="table-active">
+                            <th><img class="logo" src="assets/gtbank.png"></th>
+                            <td>Guarantee Trust Bank Plc.</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <th><img class="logo" src="assets/nb.png"></th>
+                            <td>Nigerian Breweries Plc.</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr class="table-active">
+                            <th><img class="logo" src="assets/zenith.png"></th>
+                            <td>Zenith Bank</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <th><img class="logo" src="assets/ecobank.png"></th>
+                            <td>Ecobank Transnational Incorporated</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr class="table-active">
+                            <th><img class="logo" src="assets/stanbic.png"></th>
+                            <td>Stanbic IBTC Bank</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <th><img class="logo" src="assets/seplat.png"></th>
+                            <td>Seplat Petroleum</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr class="table-active">
+                            <th><img class="logo" src="assets/guiness.png"></th>
+                            <td>Guiness Nigeria Plc.</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                        <tr>
+                            <th><img class="logo" src="assets/ubn.png"></th>
+                            <td>Union Bank of Nigeria Plc.</td>
+                            <td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td><td>20</td><td>30</td><td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div id="chartContainer" class="container"> -->
+            <div id="bar-chart">
+                <div class="graph">
+                    <ul class="x-axis">
+                        <li><span>Dangote</span></li>
+                        <li><span>Nestle</span></li>
+                        <li><span>GtBank</span></li>
+                        <li><span>NB</span></li>
+                        <li><span>Zenith</span></li>
+                        <li><span>Ecobank</span></li>
+                        <li><span>Stanbic</span></li>
+                        <li><span>Seplat</span></li>
+                        <li><span>Guiness</span></li>
+                        <li><span>UnionBank</span></li>
+                    </ul>
+                    <ul class="y-axis">
+                        <li><span>20</span></li>
+                        <li><span>15</span></li>
+                        <li><span>10</span></li>
+                        <li><span>5</span></li>
+                        <li><span>0</span></li>
+                    </ul>
+                    <div class="bars">
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>13234</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span></div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 29%">
+                                <span>470</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar bar-1 stat-1" style="height: 51%;">      
+                                <span>4080</span>
+                            </div>
+                            <div class="bar bar-2 stat-2" style="height: 71%;">
+                                <span>5680</span>
+                            </div>
+                            <div class="bar bar-3 stat-3" style="height: 13%;">
+                                <span>1040</span>
+                            </div>
+                            <div class="bar bar-4 stat-4" style="height: 76%;">
+                                <span>6080</span>
+                            </div>
+                            <div class="bar bar-5 stat-5" style="height: 86%;">
+                                <span>6880</span>
+                            </div>
+                            <div class="bar bar-6 stat-6" style="height: 22%;">
+                                <span>1760</span>
+                            </div>
+                            <div class="bar bar-7 stat-7" style="height: 78%;">
+                                <span>6240</span>
+                            </div>
+                            <div class="bar bar-8 stat-8" style="height: 72%;">
+                                <span>5760</span>
+                            </div>
+                            <div class="bar bar-9 stat-9" style="height: 36%;">
+                                <span>2880</span>
+                            </div>
+                            <div class="bar bar-10 stat-10" style="height: 44%;">
+                                <span>3520</span>
+                            </div>
+                            <div class="bar bar-11 stat-11" style="height: 64%;">
+                                <span>5120</span>
+                            </div>
+                            <div class="bar bar-12 stat-12" style="height: 59%">
+                                <span>4720</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+     <footer class="card-footer">
+                    <div class="container">
+                      <span class="text-muted" style="text-align: center">*Data presented here are fictitious. <p>Pamílẹ́rìn Ìdòwú</p></span>
+                    </div>
+                  </footer>  
+        </div>
+          
+    </body>
+</html>
