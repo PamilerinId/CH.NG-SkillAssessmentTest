@@ -18,3 +18,5 @@
 + `conda install seaborn`
 
 replace `conda` with `pip` if anaconda not installed
+
+*datasets sourced from Yahoo finance on 21st June,19
