@@ -3,6 +3,7 @@
 ## FRONTEND
 + Create table with 10 companies showing 12 months of revenue data (only HTML/CSS)
 + Create graphic showing 10 companies performance over the period on same graph
+>Currently Hosted at [chtest.pamilerin.com.ng](http://chtest.pamilerin.com.ng)
 
 ## BACKEND
 + Scrape currency website of your choosing (no api)

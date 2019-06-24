@@ -18,6 +18,7 @@ pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
 datafiles= glob.glob("data/*.csv")
+filop = open("comm_corr_report.txt", 'w')
 
 dataframes = dict()
 
@@ -48,8 +49,12 @@ print(final_df.head(10))
 
 # Correlation Calculation
 corr_df = final_df.corr(method='pearson')
+filop.write(str(corr_df))
 print("--------------- CORRELATIONS ---------------")
 print(corr_df.head(len(dataframes)))
+
+
+
 
 print("--------------- CREATE A HEATMAP ---------------")
 # create mask to display only the lower triangle of the matrix (since it's mirrored around its 
@@ -58,9 +63,12 @@ mask = np.zeros_like(corr_df)
 mask[np.triu_indices_from(mask)] = True
 
 # create the heatmap using seaborn library. 
-seaborn.heatmap(corr_df, cmap='RdYlGn_r', vmax=1.0, vmin=-1.0 , mask = mask, linewidths=2.5)
+heat_map=seaborn.heatmap(corr_df, cmap='RdYlGn_r', vmax=1.0, vmin=-1.0 , mask = mask, linewidths=2.5)
+figure = heat_map.get_figure()
+figure.savefig("comm_corr_heatmap.png") 
 
-# plot heatmap
-plt.yticks(rotation=0) 
-plt.xticks(rotation=90) 
-plt.show()
+# adjust/plot heatmap
+#plt.yticks(rotation=0) 
+#plt.xticks(rotation=90) 
+#plt.show()
+filop.close()
